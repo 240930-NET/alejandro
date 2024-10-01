@@ -1,0 +1,15 @@
+C:\Users\home\rev\alejandro\PaperScissorsRock\obj\Debug\net8.0\PaperScissorsRock.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\home\rev\alejandro\PaperScissorsRock\obj\Debug\net8.0\PaperScissorsRock.AssemblyInfoInputs.cache
+C:\Users\home\rev\alejandro\PaperScissorsRock\obj\Debug\net8.0\PaperScissorsRock.AssemblyInfo.cs
+C:\Users\home\rev\alejandro\PaperScissorsRock\obj\Debug\net8.0\PaperScissorsRock.csproj.CoreCompileInputs.cache
+C:\Users\home\rev\alejandro\PaperScissorsRock\obj\Debug\net8.0\PaperScissorsRock.sourcelink.json
+C:\Users\home\rev\alejandro\PaperScissorsRock\bin\Debug\net8.0\PaperScissorsRock.exe
+C:\Users\home\rev\alejandro\PaperScissorsRock\bin\Debug\net8.0\PaperScissorsRock.deps.json
+C:\Users\home\rev\alejandro\PaperScissorsRock\bin\Debug\net8.0\PaperScissorsRock.runtimeconfig.json
+C:\Users\home\rev\alejandro\PaperScissorsRock\bin\Debug\net8.0\PaperScissorsRock.dll
+C:\Users\home\rev\alejandro\PaperScissorsRock\bin\Debug\net8.0\PaperScissorsRock.pdb
+C:\Users\home\rev\alejandro\PaperScissorsRock\obj\Debug\net8.0\PaperScissorsRock.dll
+C:\Users\home\rev\alejandro\PaperScissorsRock\obj\Debug\net8.0\refint\PaperScissorsRock.dll
+C:\Users\home\rev\alejandro\PaperScissorsRock\obj\Debug\net8.0\PaperScissorsRock.pdb
+C:\Users\home\rev\alejandro\PaperScissorsRock\obj\Debug\net8.0\PaperScissorsRock.genruntimeconfig.cache
+C:\Users\home\rev\alejandro\PaperScissorsRock\obj\Debug\net8.0\ref\PaperScissorsRock.dll
