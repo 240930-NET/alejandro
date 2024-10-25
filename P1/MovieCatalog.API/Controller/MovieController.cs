@@ -1,5 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using MovieCatalog.API.Service;
+using MovieCatalog.API.Model;
+using Microsoft.EntityFrameworkCore;
 
 namespace MovieCatalog.API.Controller;
 
@@ -18,8 +20,8 @@ public class MovieController : ControllerBase
       var movies = _movieService.GetAllMovies();
       return Ok(movies);
     }
-    catch(Exception ex){
-      return StatusCode(500, ex.Message);
+    catch(Exception e){
+      return StatusCode(500, e.Message);
     }
   }
 
@@ -32,6 +34,47 @@ public class MovieController : ControllerBase
     }
     catch(Exception e){
       return StatusCode(500, e.Message); 
+    }
+  }
+
+  [HttpPost("new")]
+  public IActionResult AddNewMovie([FromBody] Movie movie){
+
+    try{
+      _movieService.AddMovie(movie);
+      return Ok(movie);
+    }
+    catch (DbUpdateException dbEx)
+    {
+      // Log the inner exception for more details
+      return BadRequest($"Could not add movie to catalog: {dbEx.InnerException?.Message}");
+    }
+    catch(Exception e){
+      return BadRequest($"Could not add movie to catalog: {e.Message}");
+    }
+  }
+
+  [HttpPut("edit")]
+  public IActionResult EditMovie(Movie movie){
+
+    try{
+      _movieService.EditMovie(movie);
+      return Ok(movie);
+    }
+    catch(Exception e){
+      return BadRequest($"Could not edit movie: {e.Message}");
+    }
+  }
+
+  [HttpDelete("delete/{id}")]
+  public IActionResult DeleteMovie(int id){
+
+    try{
+      _movieService.DeleteMovie(id);
+      return Ok("Movie Deleted from catalog");
+    }
+    catch(Exception e){
+      return BadRequest($"Could not remove movie: {e.Message}");
     }
   }
 }
